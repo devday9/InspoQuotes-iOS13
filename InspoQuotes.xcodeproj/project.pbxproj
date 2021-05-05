@@ -13,6 +13,7 @@
 		AD18A84821285CB000F6BF05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD18A84621285CB000F6BF05 /* LaunchScreen.storyboard */; };
 		AD18A85021285D4800F6BF05 /* QuoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD18A84F21285D4800F6BF05 /* QuoteTableViewController.swift */; };
 		AD18A8532128604C00F6BF05 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD18A8512128604B00F6BF05 /* README.md */; };
+		C38203992641B55D00CAF636 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38203982641B55D00CAF636 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AD18A84921285CB000F6BF05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD18A84F21285D4800F6BF05 /* QuoteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteTableViewController.swift; sourceTree = "<group>"; };
 		AD18A8512128604B00F6BF05 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C38203982641B55D00CAF636 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C38203992641B55D00CAF636 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +46,7 @@
 				AD18A8512128604B00F6BF05 /* README.md */,
 				AD18A83C21285CAF00F6BF05 /* InspoQuotes */,
 				AD18A83B21285CAF00F6BF05 /* Products */,
+				C38203972641B55D00CAF636 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,22 +61,54 @@
 		AD18A83C21285CAF00F6BF05 /* InspoQuotes */ = {
 			isa = PBXGroup;
 			children = (
-				AD18A83D21285CAF00F6BF05 /* AppDelegate.swift */,
-				AD18A84F21285D4800F6BF05 /* QuoteTableViewController.swift */,
-				AD18A84121285CAF00F6BF05 /* Main.storyboard */,
-				AD18A84421285CB000F6BF05 /* Assets.xcassets */,
-				AD18A84621285CB000F6BF05 /* LaunchScreen.storyboard */,
-				AD18A8552128605C00F6BF05 /* Supporting Files */,
-				AD18A84921285CB000F6BF05 /* Info.plist */,
+				C38203962641A8BA00CAF636 /* Views */,
+				C38203942641A8A400CAF636 /* Controllers */,
+				C38203932641A81900CAF636 /* Resources */,
 			);
 			path = InspoQuotes;
 			sourceTree = "<group>";
 		};
-		AD18A8552128605C00F6BF05 /* Supporting Files */ = {
+		C38203932641A81900CAF636 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AD18A83D21285CAF00F6BF05 /* AppDelegate.swift */,
+				AD18A84421285CB000F6BF05 /* Assets.xcassets */,
+				AD18A84621285CB000F6BF05 /* LaunchScreen.storyboard */,
+				AD18A84921285CB000F6BF05 /* Info.plist */,
 			);
-			path = "Supporting Files";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C38203942641A8A400CAF636 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C38203952641A8AF00CAF636 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C38203952641A8AF00CAF636 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD18A84F21285D4800F6BF05 /* QuoteTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C38203962641A8BA00CAF636 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD18A84121285CAF00F6BF05 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C38203972641B55D00CAF636 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C38203982641B55D00CAF636 /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,7 +138,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "London App Brewery";
 				TargetAttributes = {
 					AD18A83921285CAF00F6BF05 = {
@@ -201,6 +237,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -262,6 +299,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -296,13 +334,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ECFYJZ64T;
-				INFOPLIST_FILE = InspoQuotes/Info.plist;
+				DEVELOPMENT_TEAM = NZ84G65WL7;
+				INFOPLIST_FILE = InspoQuotes/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.londonappbrewery.InspoQuotes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DevenDay.InspoQuotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -314,13 +352,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ECFYJZ64T;
-				INFOPLIST_FILE = InspoQuotes/Info.plist;
+				DEVELOPMENT_TEAM = NZ84G65WL7;
+				INFOPLIST_FILE = InspoQuotes/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.londonappbrewery.InspoQuotes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DevenDay.InspoQuotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
